@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylex.css">
+    <title>Academia</title>
+</head>
+<body>
+    <header>
+        <h1 id="logotipo">Academia</h1>
+        <nav>
+            <ul>
+                <a href="#logotipo"><li>Início</li></a>
+                <a href="#planos"><li>Planos</li></a>
+                <a href="#espaco_servicos"><li>Espaço</li></a>
+                <a href="#depoimentos"><li>Depoimentos</li></a>
+                <a href="#contato"><li>Contato</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <p class="texto_destaque">Movimente-se<br>Evolua<br>Supere-se</p>
+        </section>
+        
+        <section id="planos">
+            <h2>Escolha um Plano</h2>
+            <p>Pague apenas pelo que precisa</p>
+            <article class="cartao_preco">
+                <h3>Mensal</h3>
+                <p class="valor"><span>R$</span> 99 <span>/mês</span></p>
+                <ul>
+                    <li>Acesso livre à academia</li>
+                    <li>Treinos personalizados</li>
+                    <li>Avaliação física inicial</li>
+                </ul>
+                <a href="#" class="botao_primario">Escolher Mensal</a>
+            </article>
+
+            <article class="cartao_preco">
+                <h3>Anual</h3>
+                <p class="valor"><span>R$</span> 79 <span>/mês</span></p>
+                <ul>
+                    <li>Acesso livre à academia</li>
+                    <li>Treinos personalizados</li>
+                    <li>Avaliação física a cada 3 meses</li>
+                    <li>Desconto em Whey e outros produtos</li>
+                    <li>Ganha camiseta da academia</li>
+                </ul>
+                <a href="#" class="botao_primario">Escolher Anual</a>
+            </article>
+
+            <article class="cartao_preco">
+                <h3>Crossfit</h3>
+                <p class="valor"><span>R$</span> 129 <span>/mês</span></p>
+                <ul>
+                    <li>Acesso à área de crossfit</li>
+                    <li>Treinos personalizados</li>
+                    <li>Algumas máquinas de musculação incluídas</li>
+                </ul>
+                <a href="#" class="botao_primario">Escolher Crossfit</a>
+            </article>
+
+            <article class="cartao_preco">
+                <h3>Crossfit Anual</h3>
+                <p class="valor"><span>R$</span> 109 <span>/mês</span></p>
+                <ul>
+                    <li>Acesso à área de crossfit</li>
+                    <li>Treinos personalizados</li>
+                    <li>Algumas máquinas de musculação incluídas</li>
+                    <li>Desconto em Whey e outros produtos</li>
+                    <li>Camiseta do Time do Crossfit</li>
+                </ul>
+                <a href="#" class="botao_primario">Escolher Crossfit</a>
+            </article>
+        </section>
+
+        <section id="espaco_servicos"> <!-- Vai ser uns 90% imagem aqui -->
+            <h2>O espaço</h2>
+            <div class="musculacao">
+                <img src="img/musculacao.jpg" alt="">
+            </div>
+            <div class="cardio">
+                <img src="img/cardio.jpg" alt="">
+            </div>
+            <div class="crossfit">
+                <img src="img/crossfit.jpg" alt="">
+            </div>
+            <div class="vestiario">
+                <img src="img/vestiario.jpg" alt="">
+            </div>
+            <div class="loja_suplementos">
+                <img src="img/loja_suplementos.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            
+            <div class="depoimentos__depoimento">
+                <img src="#" alt="foto de perfil">
+                <h3 class="depoimentos__depoimento__nome">Carlos</h3>
+                <blockquote class="depoimentos__depoimento__avalicao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus temporibus omnis dignissimos officia! Possimus, ipsa inventore accusantium suscipit fugiat eveniet id illum aliquid ex, labore odio nulla velit impedit.</blockquote>
+            </div>
+            
+            <div class="depoimentos__depoimento">
+                <img src="#" alt="foto de perfil">
+                <h3 class="depoimentos__depoimento__nome">Rafaela</h3>
+                <blockquote class="depoimentos__depoimento__avalicao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus temporibus omnis dignissimos officia! Possimus, ipsa inventore accusantium suscipit fugiat eveniet id illum aliquid ex, labore odio nulla velit impedit.</blockquote>
+            </div>
+            
+            <div class="depoimentos__depoimento">
+                <img src="#" alt="foto de perfil">
+                <h3 class="depoimentos__depoimento__nome">Luís</h3>
+                <blockquote class="depoimentos__depoimento__avalicao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus temporibus omnis dignissimos officia! Possimus, ipsa inventore accusantium suscipit fugiat eveniet id illum aliquid ex, labore odio nulla velit impedit.</blockquote>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Marque uma aula experimental conosco</p>
+            <form action="" method="post" class="contato__formulario">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="" id="nome" placeholder="seu nome aqui">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="seu email aqui">
+
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+
+                <p>Qual serviço você quer experimentar?</p>
+                <input type="radio" name="tipo_servico" id="musculacao">
+                <label for="tipo_servico">Musculação</label>
+                <input type="radio" name="tipo_servico" id="crossfit">
+                <label for="tipo_servico">Crossfit</label>
+
+                <label for="mensagem">Escreva uma mensagem!</label>
+                <input type="text" name="mensagem" id="mensagem">
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
