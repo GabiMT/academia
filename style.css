@@ -1,3 +1,11 @@
+/* VARIAVEIS */
+:root{
+    --background: #101010;
+    --background2: #181818;
+    --destaque: #dd1919;
+    --destaque2: #791414;
+}
+
 /* RESET CSS */
 *, 
 *:after,
@@ -7,94 +15,82 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body{
     font-size: 100%;
     list-style-type: none;
     /* FIM RESET CSS */
 
-    background-color: black;
-    color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     background-color: var(--background);
+     color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* HEADER */
 
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    align-items: center;
+}
+
     /* LOGOTIPO */
     #logotipo{
         text-transform: uppercase;
-        text-align: center;
-        padding: 15px 0 0 0;
+        font-size: 50px;
+        margin: 10px 50px;
     }
 
-    nav a{
-        color: white;
+    /* NAVEGAÇÃO */
+    nav{
+        grid-column: 2 / 4;
     }
 
     nav ul{
-        text-align: center;
-        margin: 15px 0;
-        text-transform: uppercase;
+        text-align: end;
+        margin: 10px 50px;
     }
 
     nav li{
         display: inline-block;
+        color: white;
+        text-transform: uppercase;
     }
 
 /* MAIN */
 
-    /* INICIO */
-
+    /* INICIO (BANNER) */
     #inicio{
-        height: 90vh;
-        background-image: linear-gradient(to bottom, transparent 0%, #000 80%), url(img/background.jpg);
+        height: 80vh;
+        background-image: linear-gradient(to bottom, transparent 0%, var(--background) 80%), url(img/background.jpg);
         background-position: center;
         background-size: cover;
+
         display: grid;
+        grid-template-columns: 45% 55%;
         grid-template-rows: 70% 30%;
-        grid-template-columns: 50% 50%;
-
-        align-items: center;
         justify-items: center;
+        align-items: center;
     }
 
-    .texto_destaque{
-        text-transform: uppercase;
-        color: white;
-        font-size: 70px;
-        text-align: center;
-        justify-content: center;
-    }
+        /* TEXTO */
+        .texto_destaque{
+            text-transform: uppercase;
+            font-size: 70px;
+        }
 
-    #botao_inicio{
-        grid-column: 1;
-        grid-row: 2;
+        #botao_contato{
+            background-color: var(--destaque);
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+            padding: 25px;
+            border-radius: 500px;
 
-        align-self: start;
-    }
+            grid-row: 2;
+            align-self: baseline;
+        }
 
-    #botao_contato{
-        text-transform: uppercase;
-        font-weight: bolder;
-        background-color: red;
-        color: white;
-        border-radius: 100px;
-        padding: 20px;
-    }
-
-    /* PLANOS */
-
-    #planos{
-        background-color: gray;
-    }
-
-    /* ESPAÇO SERVIÇOS */
-    #espaco_servicos img{
-        width: 500px;
-        
-    } 
-
-    /* DEPOIMENTOS */
-    #depoimentos img{
-        width: 50px;
-        border-radius: 100%;
-    }
+        #botao_contato:hover{
+            background-color: var(--destaque2);
+        }
