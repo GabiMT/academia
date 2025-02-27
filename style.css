@@ -1,0 +1,100 @@
+/* RESET CSS */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    /* FIM RESET CSS */
+
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER */
+
+    /* LOGOTIPO */
+    #logotipo{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
+
+    nav a{
+        color: white;
+    }
+
+    nav ul{
+        text-align: center;
+        margin: 15px 0;
+        text-transform: uppercase;
+    }
+
+    nav li{
+        display: inline-block;
+    }
+
+/* MAIN */
+
+    /* INICIO */
+
+    #inicio{
+        height: 90vh;
+        background-image: linear-gradient(to bottom, transparent 0%, #000 80%), url(img/background.jpg);
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        grid-template-rows: 70% 30%;
+        grid-template-columns: 50% 50%;
+
+        align-items: center;
+        justify-items: center;
+    }
+
+    .texto_destaque{
+        text-transform: uppercase;
+        color: white;
+        font-size: 70px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #botao_inicio{
+        grid-column: 1;
+        grid-row: 2;
+
+        align-self: start;
+    }
+
+    #botao_contato{
+        text-transform: uppercase;
+        font-weight: bolder;
+        background-color: red;
+        color: white;
+        border-radius: 100px;
+        padding: 20px;
+    }
+
+    /* PLANOS */
+
+    #planos{
+        background-color: gray;
+    }
+
+    /* ESPAÇO SERVIÇOS */
+    #espaco_servicos img{
+        width: 500px;
+        
+    } 
+
+    /* DEPOIMENTOS */
+    #depoimentos img{
+        width: 50px;
+        border-radius: 100%;
+    }
