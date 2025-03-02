@@ -2,6 +2,7 @@
 :root{
     --background: #101010;
     --background2: #181818;
+    --detalhe: #4F4F4F;
     --destaque: #dd1919;
     --destaque2: #791414;
 }
@@ -21,9 +22,27 @@ body{
     list-style-type: none;
     /* FIM RESET CSS */
 
-     background-color: var(--background);
-     color: white;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--background);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+/* ALL */
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--detalhe);
 }
 
 /* HEADER */
@@ -55,6 +74,11 @@ header{
         display: inline-block;
         color: white;
         text-transform: uppercase;
+        padding: 0 10px;
+    }
+
+    nav li:hover{
+        color: var(--destaque);
     }
 
 /* MAIN */
@@ -84,8 +108,9 @@ header{
             color: white;
             text-transform: uppercase;
             font-weight: 900;
-            padding: 25px;
+            padding: 15px;
             border-radius: 500px;
+            font-size: 25px;
 
             grid-row: 2;
             align-self: baseline;
@@ -94,3 +119,80 @@ header{
         #botao_contato:hover{
             background-color: var(--destaque2);
         }
+
+    /* FAIXA DECORATIVA */
+    .faixa_decorativa{
+        background-color: var(--destaque);
+        color: white;
+        font-size: 65px;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        transform: scale(1.25) rotate(-3deg);
+        position: relative;
+        top: -55px;
+    }
+
+    /* PLANOS */
+
+        /* CARTÕES */
+        .os_planos{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+            .cartao_preco{
+                height: 450px;
+                width: 250px;
+                background-color: var(--background2);
+                padding: 30px;
+                border-radius: 30px;
+                margin: 50px 10px;
+
+                display: grid;
+                grid-template-rows: 75px 50px auto 50px;
+                justify-content: center;
+            }
+
+                .cartao_preco h3{
+                    font-size: 30px;
+                }
+
+                .cartao_preco p{
+                    font-size: 40px;
+                    text-align: center;
+                    justify-self: baseline;
+                }
+
+                    .diminuir{
+                        color: #4F4F4F;
+                        font-size: 20px;
+                    }
+
+                .cartao_preco ul li{
+                    margin: 5px;
+                    text-align: justify;
+                }
+
+                .botao_primario{
+                    background: var(--destaque);
+                    color: white;
+                    border-radius: 100px;
+                    padding: 10px;
+                    justify-self: center;
+                    align-self: center;
+                }
+
+    /* ESPAÇOS */
+    #espaco_servicos img{
+        width: 500px;
+        
+    }
+
+    /* DEPOIMENTOS */
+    #depoimentos img{
+        width: 50px;
+        border-radius: 100%;
+    }
