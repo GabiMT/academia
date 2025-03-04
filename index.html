@@ -165,9 +165,11 @@
         </section>
 
         <section id="contato">
-            <h2>Contato</h2>
-            <p>Marque uma aula experimental conosco</p>
-            <form action="" method="post" class="contato__formulario">
+            <div class="titulo">
+                <h2>Contato</h2>
+                <p class="subtitulo">Marque uma aula experimental conosco</p>
+            </div>
+            <form action="" method="post" id="contato__formulario">
                 <label for="nome">Nome Completo</label>
                 <input type="text" name="" id="nome" placeholder="seu nome aqui">
 
@@ -178,17 +180,26 @@
                 <input type="date" name="nascimento" id="nascimento">
 
                 <p>Qual serviço você quer experimentar?</p>
-                <input type="radio" name="tipo_servico" id="musculacao">
-                <label for="tipo_servico">Musculação</label>
-                <input type="radio" name="tipo_servico" id="crossfit">
-                <label for="tipo_servico">Crossfit</label>
+                <div class="radio-group">
+                    <label for="musculacao">
+                        <input type="radio" name="tipo_servico" id="musculacao">
+                        Musculação
+                    </label>
+                    <label for="crossfit">
+                        <input type="radio" name="tipo_servico" id="crossfit">
+                        Crossfit
+                    </label>
+                </div>
 
                 <label for="mensagem">Escreva uma mensagem!</label>
-                <input type="text" name="mensagem" id="mensagem">
+                <textarea name="" id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
 
-                <input type="submit" value="Enviar">
+                <input type="submit" class="botao_primario" value="Enviar">
             </form>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
