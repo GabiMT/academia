@@ -36,6 +36,7 @@ h2{
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 40px;
 }
 
 .subtitulo{
@@ -43,6 +44,7 @@ h2{
     text-transform: uppercase;
     text-align: center;
     color: var(--detalhe);
+    margin-bottom: 40px;
 }
 
 /* HEADER */
@@ -149,7 +151,7 @@ header{
                 background-color: var(--background2);
                 padding: 30px;
                 border-radius: 30px;
-                margin: 50px 10px;
+                margin: 10px;
 
                 display: grid;
                 grid-template-rows: 75px 50px auto 50px;
@@ -186,10 +188,46 @@ header{
                 }
 
     /* ESPAÇOS */
-    #espaco_servicos img{
-        width: 500px;
-        
+    #imagens_espaco {
+        display: grid;
+        grid-template-columns: repeat(3, 310px);
+        gap: 10px;
+        justify-content: center;
     }
+    
+        .img-container {
+            position: relative;
+            width: 300px;
+    }
+    
+            .img-container img {
+                width: 100%;
+                display: block;
+                transition: filter 0.3s ease-in-out;
+            }
+    
+            .texto {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                padding: 10px;
+                border-radius: 5px;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                width: 80%;
+            }
+    
+            .img-container:hover img {
+                filter: brightness(50%);
+            }
+    
+            .img-container:hover .texto {
+                opacity: 1;
+            }
+    
 
     /* DEPOIMENTOS */
     #depoimentos img{
