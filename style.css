@@ -358,3 +358,47 @@ header{
         flex-direction: column;
         text-align: center;
     }
+
+@media (max-width: 991px){
+    #inicio{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    #botao_contato{
+        transform: scale(1.5);
+    }
+    
+    .os_planos{
+        margin: 0 100px;
+        flex-wrap: wrap;
+    }
+
+    #imagens_espaco{
+        grid-template-columns: repeat(2, 310px);
+    }
+
+    #todos_depoimentos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 767px){
+    header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .os_planos{
+        margin: 0;
+    }
+
+    #imagens_espaco{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
